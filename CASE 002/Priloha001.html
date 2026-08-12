@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>Příloha 001</title>
+<link rel="stylesheet" href="style-photo.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="card" id="card" style="--rotation: 7deg;">
+      <div class="face front">
+        <img src="Fotografie01.png" alt="">
+        <div class="photo-caption">PŘÍLOHA 001</div>
+      </div>
+      <div class="face back">
+        <div class="back-text"><center>OLIVER BENNETT
+6 let</center>
+
+Fotografie poskytnuta rodinou dne 11. dubna 2031.
+
+Pořízena přibližně tři týdny před událostí.</div>
+      </div>
+    </div>
+    
+  </div>
+<script>
+  document.getElementById('card').addEventListener('click', function() {
+    this.classList.toggle('flipped');
+  });
+</script>
+</body>
+</html>

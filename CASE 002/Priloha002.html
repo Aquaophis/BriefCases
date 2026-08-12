@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>Příloha 002</title>
+<link rel="stylesheet" href="style-photo.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="card" id="card" style="--rotation: -3deg;">
+      <div class="face front">
+        <img src="Fotografie02.png" alt="">
+        <div class="photo-caption">PŘÍLOHA 002</div>
+      </div>
+      <div class="face back">
+        <div class="back-text"><center>EMILY CARTER
+5 let</center>
+
+Fotografie poskytnuta rodinou dne 20. dubna 2031.
+
+Pořízena v den prvního zaznamenaného projevu.</div>
+      </div>
+    </div>
+    
+  </div>
+<script>
+  document.getElementById('card').addEventListener('click', function() {
+    this.classList.toggle('flipped');
+  });
+</script>
+</body>
+</html>
