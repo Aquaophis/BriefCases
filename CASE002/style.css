@@ -185,12 +185,183 @@
   .signature {
     text-align: center;
   }
-  .signature .sig-name {
+  
+	.signature .sig-name {
+	  margin-bottom: 2px;
+	  line-height: 1;
+	  white-space: nowrap;
+	  display: inline-block;
+	}
+
+
+	/* =========================================================
+	   1 — CHAOTICKÝ DOKTOR
+	   skoro nečitateľný, rýchly, výrazne stlačený podpis
+	   ========================================================= */
+
+	.sig-chaotic {
+	  font-family: 'Reenie Beanie', cursive;
+	  font-size: 38px;
+	  letter-spacing: -3px;
+	  word-spacing: -5px;
+	  transform: rotate(-5deg) skewX(-12deg) scaleX(0.82);
+	}
+
+
+	/* =========================================================
+	   2 — NEMÁM ČAS
+	   rýchly podpis človeka, ktorý podpisuje dvadsiaty papier
+	   ========================================================= */
+
+	.sig-rushed {
+	  font-family: 'Nanum Pen Script', cursive;
+	  font-size: 34px;
+	  letter-spacing: -2px;
+	  word-spacing: -3px;
+	  transform: rotate(-3deg) skewX(-8deg) scaleX(0.9);
+	}
+
+
+	/* =========================================================
+	   3 — ÚRADNÍCKY ŠKRABOPIS
+	   stále čitateľný, ale veľmi osobný a neupravený
+	   ========================================================= */
+
+	.sig-scrawl {
+	  font-family: 'Covered By Your Grace', cursive;
+	  font-size: 27px;
+	  letter-spacing: -1px;
+	  transform: rotate(2deg) skewX(-4deg);
+	}
+
+
+	/* =========================================================
+	   4 — RÝCHLY A SEBAVEDOMÝ
+	   veľké pohyby rukou, energický podpis
+	   ========================================================= */
+
+	.sig-bold {
+	  font-family: 'Gochi Hand', cursive;
+	  font-size: 27px;
+	  letter-spacing: -1px;
+	  transform: rotate(-2deg) skewX(-5deg) scaleX(1.05);
+	}
+
+
+	/* =========================================================
+	   5 — STARŠÍ PRACOVNÍK
+	   nepravidelný, trochu pomalší rukopis
+	   ========================================================= */
+
+	.sig-oldhand {
+	  font-family: 'Gloria Hallelujah', cursive;
+	  font-size: 19px;
+	  letter-spacing: -1px;
+	  transform: rotate(1deg) scaleX(0.93);
+	}
+
+
+	/* =========================================================
+	   6 — PEDANTNÝ ÚRADNÍK
+	   drobný a starostlivý rukopis
+	   ========================================================= */
+
+	.sig-careful {
+	  font-family: 'Homemade Apple', cursive;
+	  font-size: 17px;
+	  letter-spacing: -0.5px;
+	  transform: rotate(-1deg) scaleX(0.95);
+	}
+
+
+	/* =========================================================
+	   7 — EXCENTRICKÝ / VÝRAZNÝ
+	   nezameniteľný podpis, vhodný pre zvláštnu osobnosť
+	   ========================================================= */
+
+	.sig-eccentric {
+	  font-family: 'Rock Salt', cursive;
+	  font-size: 16px;
+	  letter-spacing: -1px;
+	  transform: rotate(-3deg) skewX(-3deg);
+	}
+
+
+	/* =========================================================
+	   8 — BEŽNÝ PEKNÝ RUKOPIS
+	   prirodzený človek, ktorý píše pomerne pekne
+	   ========================================================= */
+
+	.sig-natural {
+	  font-family: 'Caveat', cursive;
+	  font-size: 29px;
+	  font-weight: 500;
+	  letter-spacing: -1px;
+	  transform: rotate(-1deg) skewX(-3deg);
+	}
+
+
+	/* =========================================================
+	   9 — UHLADENÝ PROFESIONÁL
+	   elegantný podpis bez toho, aby pôsobil príliš kaligraficky
+	   ========================================================= */
+
+	.sig-elegant {
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 28px;
+	  font-weight: 500;
+	  letter-spacing: -0.5px;
+	  transform: rotate(-2deg);
+	}
+
+
+	/* =========================================================
+	   10 — UHLADENÁ ASISTENTKA
+	   veľmi čistý, mäkký a elegantný podpis
+	   ========================================================= */
+
+	.sig-assistant {
+	  font-family: 'Sacramento', cursive;
+	  font-size: 34px;
+	  letter-spacing: 0;
+	  transform: rotate(-1deg) skewX(-2deg);
+	}
+	
+	.sig-ink-default {
+	  color: #2e2410;
+	}
+
+	.sig-ink-black {
+	  color: #211c16;
+	}
+
+	.sig-ink-blue {
+	  color: #24334a;
+	}
+
+	.sig-ink-faded {
+	  color: #514b3e;
+	  opacity: 0.78;
+	}
+
+	.sig-ink-purple {
+	  color: #44164D;
+	  opacity: 0.88;
+	}
+
+	.sig-ink-darkpurple {
+	  color: #36153D;
+	  opacity: 0.88;
+	}
+	
+	
+  .signature .sig-name2 {
     font-family: 'Brush Script MT', cursive;
     font-size: 26px;
     color: #2e2410;
     margin-bottom: 2px;
   }
+  
   .signature .sig-line {
     width: 55mm;
     border-bottom: 1px solid #4a3c22;
