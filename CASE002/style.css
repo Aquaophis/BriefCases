@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Dancing+Script:wght@500&family=Nanum+Pen+Script&display=swap');
   @page { size: A4; margin: 0; }
   html, body {
     margin: 0; padding: 0;
@@ -396,3 +397,37 @@
     color: #2a2010;
     margin-top: 2mm;
   }
+
+/* CASE002 shared report styles */
+.case002-report .page { isolation: isolate; }
+.case002-report .page::before { z-index: -1; }
+.case002-report .title-block { margin-top: 0; }
+.case002-report .meta-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+.case002-report .meta-row .field { min-width: 0; padding: 0 2px; }
+.case002-report .body-area { font-size: 14px; }
+.case002-report .body-area p { margin: 0 0 28px; }
+.case002-report .body-area h2 { font: inherit; font-weight: bold; margin: 0; }
+.case002-report .body-area table { width: 100%; border-collapse: collapse; margin: 0 0 28px; }
+.case002-report .body-area th, .case002-report .body-area td { text-align: left; padding: 0 8px; line-height: 28px; }
+.case002-report .body-area th { background: rgba(119,94,48,.10); }
+.case002-report .sign-block { gap: 16px; }
+.case002-report .sign-block .stamp-seal { flex: 0 0 30mm; }
+.case002-report .signature .sig-line { width: 100%; }
+.case002-report .signature .sig-caption { letter-spacing: .6px; }
+.case002-report .signature .sig-role { margin-top: 3px; }
+.case002-report .stamp-corner-info { --rotation: -8deg; }
+.case002-report .stamp-corner { --rotation: 13deg; }
+@media screen and (max-width: 830px) {
+  .case002-report .page { width: calc(100% - 24px); min-height: calc(100svh - 24px); margin: 12px auto; padding: 16mm clamp(14px, 6vw, 18mm) 10mm; }
+}
+@media screen and (max-width: 480px) {
+  .case002-report .page { padding-top: 24mm; }
+  .case002-report .stamp-corner, .case002-report .stamp-corner-info { top: 6mm; right: 7mm; font-size: 11px; }
+  .case002-report .meta-row { grid-template-columns: 1fr; gap: 6px; }
+  .case002-report .body-area { font-size: 13px; }
+  .case002-report .title-block { font-size: 14px; }
+}
+@media print {
+  .case002-report { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .case002-report .page { margin: 0; box-shadow: none; min-height: 296.8mm; }
+}
